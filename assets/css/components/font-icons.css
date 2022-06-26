@@ -47,7 +47,7 @@
 	content: "\f00d";
 }
 
-.main-navigation.toggled .sfHover > a .dropdown-menu-toggle:before {
+.main-navigation.toggled .sfHover>a .dropdown-menu-toggle:before {
 	content: "\f106";
 }
 
@@ -90,7 +90,7 @@ nav:not(.toggled) ul ul .dropdown-menu-toggle:before {
 	transform: rotate(180deg);
 }
 
-.dropdown-click .menu-item-has-children.sfHover > a .dropdown-menu-toggle:before {
+.dropdown-click .menu-item-has-children.sfHover>a .dropdown-menu-toggle:before {
 	content: "\f106";
 }
 

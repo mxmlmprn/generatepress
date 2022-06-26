@@ -9,9 +9,9 @@
 }
 
 .generate-metabox .clear:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .customize-button a.button,
@@ -42,14 +42,17 @@
 	width: 0;
 	height: 0;
 }
+
 .addon-container:after {
 	clear: both;
 }
+
 .premium-addons .gp-clear {
 	margin: 0 !important;
 	border: 0;
 	padding: 0 !important;
 }
+
 .premium-addons .add-on.gp-clear {
 	padding: 15px !important;
 	margin: 0 !important;
@@ -57,13 +60,16 @@
 	-webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 	box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 }
+
 .premium-addons .add-on:last-child {
 	border: 0 !important;
 }
+
 .addon-action {
 	float: right;
 	clear: right;
 }
+
 .addon-name {
 	float: left;
 }
@@ -76,14 +82,14 @@
 /* New admin */
 .clearfix:after,
 .clearfix:before {
-  content: ".";
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  font-size: 0;
-  line-height: 0;
-  width: 0;
-  height: 0;
+	content: ".";
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
 }
 
 .clearfix:after {
@@ -113,9 +119,9 @@
 }
 
 .gp-masthead {
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 1px 0 rgba(200,215,225,0.5), 0 1px 2px #DDD;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 0 1px 0 rgba(200, 215, 225, 0.5), 0 1px 2px #DDD;
 	margin-bottom: 40px;
 	padding: 20px;
 }
@@ -161,14 +167,14 @@
 }
 
 .popular-articles ul {
-    list-style-type: disc;
-    margin-left: 20px;
+	list-style-type: disc;
+	margin-left: 20px;
 	margin-bottom: 0;
 }
 
 .popular-articles .hndle a {
-	float:right;
-	font-size:13px;
+	float: right;
+	font-size: 13px;
 }
 
 #gen-delete p:last-child {
@@ -187,9 +193,9 @@
 	border-bottom: 1px solid #ddd;
 }
 
-.gp-container .postbox > h3.hndle {
-    padding-top: 12px;
-    padding-bottom: 12px;
+.gp-container .postbox>h3.hndle {
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 @media (min-width: 768px) {
@@ -221,11 +227,13 @@
 	.hide-on-mobile {
 		display: none;
 	}
+
 	.gp-masthead .gp-masthead-links,
 	.gp-masthead .gp-title {
 		float: none;
 		text-align: center;
 	}
+
 	.gp-masthead .gp-title {
 		margin-bottom: 20px;
 	}

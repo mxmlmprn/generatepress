@@ -1,10 +1,12 @@
-.generate-meta-box-content > div {
+.generate-meta-box-content>div {
 	padding: 12px;
 }
+
 #generate_layout_options_meta_box .inside {
 	padding: 0;
-	margin:0;
+	margin: 0;
 }
+
 #generate-meta-box-container .generate-meta-box-menu {
 	position: relative;
 	float: left;
@@ -38,7 +40,7 @@
 
 #generate-meta-box-container .generate-meta-box-content {
 	float: left;
-	width: calc( 100% - 180px );
+	width: calc(100% - 180px);
 	margin-left: -1px;
 	border-left: 1px solid #eee;
 	background-color: #fff;
@@ -47,7 +49,7 @@
 #generate-meta-box-container {
 	overflow: hidden;
 	background: #fff;
-	background: linear-gradient( 90deg, #fafafa 0%, #fafafa 180px, #fff 180px, #fff 100% );
+	background: linear-gradient(90deg, #fafafa 0%, #fafafa 180px, #fff 180px, #fff 100%);
 }
 
 #generate-meta-box-container .current {
@@ -66,33 +68,32 @@
 	margin-bottom: 3px;
 }
 
-
 .generate-meta-box-menu li {
 	display: inline-block;
 }
 
 #side-sortables #generate-meta-box-container .generate-meta-box-menu,
-#side-sortables #generate-meta-box-container .generate-meta-box-content  {
-    float: none;
-    width: 100%;
+#side-sortables #generate-meta-box-container .generate-meta-box-content {
+	float: none;
+	width: 100%;
 	margin: 0;
 	border: 0;
 }
 
-.edit-post-meta-boxes-area.is-side .generate-meta-box-content > div {
-    display: block !important;
+.edit-post-meta-boxes-area.is-side .generate-meta-box-content>div {
+	display: block !important;
 }
 
 .edit-post-meta-boxes-area.is-side .generate-meta-box-menu {
-    display: none;
+	display: none;
 }
 
 #generate-meta-box-container label {
-    display: none;
+	display: none;
 }
 
 .edit-post-meta-boxes-area.is-side #generate-meta-box-container label.generate-layout-metabox-section-title {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
 }

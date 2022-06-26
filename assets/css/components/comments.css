@@ -41,7 +41,7 @@
 	margin-top: 0;
 }
 
-.comment-form > .form-submit {
+.comment-form>.form-submit {
 	margin-bottom: 0;
 }
 
@@ -73,7 +73,7 @@
 	border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.depth-1.parent > .children {
+.depth-1.parent>.children {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -96,7 +96,7 @@
 	margin-bottom: 0;
 }
 
-.comment-list > .comment:first-child {
+.comment-list>.comment:first-child {
 	padding-top: 0;
 	margin-top: 0;
 	border-top: 0;

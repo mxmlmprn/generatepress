@@ -11,17 +11,19 @@
 	padding: 20px;
 	overflow: auto;
 	max-width: 100%;
-	color: inherit; /* editor only */
+	color: inherit;
+	/* editor only */
 }
 
 body .block-editor-block-list__block blockquote {
 	border-left: 5px solid rgba(0, 0, 0, 0.05);
 	padding: 20px;
 	font-size: 1.2em;
-	font-style:italic;
+	font-style: italic;
 	margin: 0 0 1.5em;
 	position: relative;
-	color: inherit; /* editor only */
+	color: inherit;
+	/* editor only */
 }
 
 body .wp-block-quote:not(.is-large):not(.is-style-large) {
@@ -78,7 +80,6 @@ body .block-editor-default-block-appender textarea.editor-default-block-appender
 /*--------------------------------------------------------------
 ## Gallery
 --------------------------------------------------------------*/
-
 .block-editor-block-list__layout .wp-block-gallery li figcaption {
 	background: rgba(255, 255, 255, 0.7);
 	color: #000;
@@ -89,7 +90,6 @@ body .block-editor-default-block-appender textarea.editor-default-block-appender
 /*--------------------------------------------------------------
 # Button
 --------------------------------------------------------------*/
-
 .block-editor-block-list__layout .wp-block-button .wp-block-button__link,
 .block-editor-block-list__layout .button {
 	font-size: inherit;
@@ -100,7 +100,6 @@ body .block-editor-default-block-appender textarea.editor-default-block-appender
 /*--------------------------------------------------------------
 # Content Title
 --------------------------------------------------------------*/
-
 button.content-title-visibility {
 	position: absolute;
 	right: 0;
@@ -143,7 +142,6 @@ button.content-title-visibility:before {
 /*--------------------------------------------------------------
 # Columns
 --------------------------------------------------------------*/
-
 .block-editor-block-list__block .wp-block-columns .wp-block-column {
 	margin-bottom: 0;
 }
@@ -151,7 +149,6 @@ button.content-title-visibility:before {
 /*--------------------------------------------------------------
 # Fix shortcode block label color
 --------------------------------------------------------------*/
-
 .wp-block-shortcode label,
 .wp-block-shortcode .block-editor-plain-text {
 	color: initial;

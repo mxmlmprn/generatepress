@@ -9,7 +9,7 @@
 	display: flex;
 }
 
-.inside-footer-widgets > div {
+.inside-footer-widgets>div {
 	flex: 1 1 0;
 }
 
@@ -54,7 +54,7 @@
 	margin: 0 10px;
 }
 
-.top-bar .widget_nav_menu > div > ul {
+.top-bar .widget_nav_menu>div>ul {
 	display: flex;
 	align-items: center;
 }
@@ -135,7 +135,7 @@ div.top-bar .widget {
 	padding: 0;
 }
 
-.footer-bar .widget_nav_menu > div > ul {
+.footer-bar .widget_nav_menu>div>ul {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -191,64 +191,82 @@ div.top-bar .widget {
 ## Breakpoint (768px)
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
+
 	/*--------------------------------------------------------------
 	## Top Bar
 	--------------------------------------------------------------*/
 	.top-bar .inside-top-bar {
 		justify-content: center;
 	}
-	.top-bar .inside-top-bar > .widget {
+
+	.top-bar .inside-top-bar>.widget {
 		order: 1;
 		margin: 0 10px;
 	}
+
 	.top-bar .inside-top-bar:first-child {
 		margin-left: auto;
 	}
+
 	.top-bar .inside-top-bar:last-child {
 		margin-right: auto;
 	}
+
 	.top-bar .widget_nav_menu li {
 		padding: 5px 0;
 	}
+
 	.top-bar-align-center {
 		text-align: center;
 	}
+
 	/*--------------------------------------------------------------
 	## Footer
 	--------------------------------------------------------------*/
 	.inside-footer-widgets {
 		flex-direction: column;
 	}
-	.inside-footer-widgets > div:not(:last-child) {
+
+	.inside-footer-widgets>div:not(:last-child) {
 		margin-bottom: 40px;
 	}
+
 	.site-footer .footer-widgets .footer-widgets-container .inside-footer-widgets {
 		margin: 0;
 	}
+
 	.site-footer .footer-widgets .footer-widgets-container .inner-padding {
 		padding: 0;
 	}
+
 	.footer-bar-active .inside-site-info {
 		flex-direction: column;
 	}
+
 	.footer-bar-active .footer-bar {
 		margin-bottom: 10px;
 	}
-	.footer-bar .widget_nav_menu > div > ul {
+
+	.footer-bar .widget_nav_menu>div>ul {
 		justify-content: center;
 	}
+
 	.footer-bar .widget_nav_menu li {
 		padding: 5px 0;
 	}
+
 	.footer-bar .widget_nav_menu li:first-child {
 		margin-left: 10px;
 	}
+
 	.footer-bar .widget_nav_menu li:last-child {
 		margin-right: 10px;
 	}
+
 	.footer-bar-align-left .copyright-bar {
 		margin-left: 0;
 	}
+
 	.footer-bar-align-right .copyright-bar {
 		order: unset;
 		margin-right: 0;
