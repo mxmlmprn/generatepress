@@ -29,48 +29,86 @@ export default class RangeControlInput extends Component {
 			placeholder = '',
 		} = this.props;
 
-		return (
-			<div className="components-generate-range-control">
-				{ label &&
-					<div className="components-generate-range-control--label">
-						{ label }
-					</div>
-				}
+		return ( <
+			div className = "components-generate-range-control" > {
+				label &&
+				<
+				div className = "components-generate-range-control--label" > {
+					label
+				} <
+				/div>
+			}
 
-				<div className="components-generate-range-control--wrapper">
-					<div className="components-generate-range-control--range">
-						<RangeControl
-							className={ 'generate-range-control-range' }
-							beforeIcon={ beforeIcon }
-							value={ hasNumericValue( value ) ? parseFloat( value ) : '' }
-							onChange={ ( newVal ) => onChange( newVal ) }
-							min={ rangeMin }
-							max={ rangeMax }
-							step={ step }
-							withInputField={ false }
-							initialPosition={ initialPosition }
-						/>
-					</div>
+			<
+			div className = "components-generate-range-control--wrapper" >
+			<
+			div className = "components-generate-range-control--range" >
+			<
+			RangeControl className = {
+				'generate-range-control-range'
+			}
+			beforeIcon = {
+				beforeIcon
+			}
+			value = {
+				hasNumericValue(value) ? parseFloat(value) : ''
+			}
+			onChange = {
+				(newVal) => onChange(newVal)
+			}
+			min = {
+				rangeMin
+			}
+			max = {
+				rangeMax
+			}
+			step = {
+				step
+			}
+			withInputField = {
+				false
+			}
+			initialPosition = {
+				initialPosition
+			}
+			/> <
+			/div>
 
-					<div className="components-generate-range-control-input">
-						<TextControl
-							type="number"
-							placeholder={ '' !== placeholder ? placeholder : '' }
-							min={ inputMin }
-							max={ inputMax }
-							step={ step }
-							value={ hasNumericValue( value ) ? value : '' }
-							onChange={ ( newVal ) => onChange( newVal ) }
-						/>
-					</div>
-				</div>
+			<
+			div className = "components-generate-range-control-input" >
+			<
+			TextControl type = "number"
+			placeholder = {
+				'' !== placeholder ? placeholder : ''
+			}
+			min = {
+				inputMin
+			}
+			max = {
+				inputMax
+			}
+			step = {
+				step
+			}
+			value = {
+				hasNumericValue(value) ? value : ''
+			}
+			onChange = {
+				(newVal) => onChange(newVal)
+			}
+			/> <
+			/div> <
+			/div>
 
-				{ help &&
-					<p className="components-base-control__help">
-						{ help }
-					</p>
-				}
-			</div>
+			{
+				help &&
+					<
+					p className = "components-base-control__help" > {
+						help
+					} <
+					/p>
+			} <
+			/div>
 		);
 	}
 }

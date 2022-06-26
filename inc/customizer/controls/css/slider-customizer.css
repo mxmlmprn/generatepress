@@ -2,7 +2,7 @@
 	position: relative;
 	width: calc(100% - 60px);
 	height: 6px;
-	background-color: rgba(0,0,0,.10);
+	background-color: rgba(0, 0, 0, .10);
 	cursor: pointer;
 	-webkit-transition: background .5s;
 	-moz-transition: background .5s;
@@ -17,7 +17,7 @@
 	display: none;
 }
 
-.customize-control-generatepress-range-slider .gp_range_value.hide-value + .generatepress-slider {
+.customize-control-generatepress-range-slider .gp_range_value.hide-value+.generatepress-slider {
 	width: 100%;
 }
 
@@ -43,9 +43,9 @@
 }
 
 .customize-control-generatepress-range-slider .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -69,13 +69,13 @@
 }
 
 .customize-control-generatepress-range-slider .gp_range_value span.value {
-    font-size: 12px;
-    width: calc(100% - 2px);
-    text-align: center;
-    min-height: 30px;
-    background: #FFF;
-    line-height: 30px;
-    border: 1px solid #DDD;
+	font-size: 12px;
+	width: calc(100% - 2px);
+	text-align: center;
+	min-height: 30px;
+	background: #FFF;
+	line-height: 30px;
+	border: 1px solid #DDD;
 }
 
 .customize-control-generatepress-range-slider .has-unit .gp_range_value span.value {
@@ -84,32 +84,32 @@
 }
 
 .customize-control-generatepress-range-slider .gp_range_value .unit {
-    width: 29px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 30px;
+	width: 29px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
 	background: #fff;
 	border: 1px solid #ddd;
 	margin-left: 1px;
 }
 
 .customize-control-generatepress-range-slider .generatepress-range-slider-reset span {
-    font-size: 16px;
-    line-height: 22px;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .customize-control-generatepress-range-slider .gp_range_value input {
-    font-size: 12px;
-    padding: 0px;
-    text-align: center;
-    min-height: 30px;
+	font-size: 12px;
+	padding: 0px;
+	text-align: center;
+	min-height: 30px;
 	height: auto;
 	border-radius: 0;
 	border-color: #ddd;
 }
 
 .customize-control-generatepress-range-slider .has-unit .gp_range_value input {
-    width: calc(100% - 30px);
+	width: calc(100% - 30px);
 }
 
 .customize-control-generatepress-range-slider .gp-range-title-area .dashicons {
@@ -133,7 +133,7 @@
 	color: #222;
 }
 
-.customize-control-generatepress-range-slider .gp-device-controls > span:first-child:last-child {
+.customize-control-generatepress-range-slider .gp-device-controls>span:first-child:last-child {
 	display: none;
 }
 

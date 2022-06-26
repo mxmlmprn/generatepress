@@ -1,12 +1,12 @@
-( function( $, api ) {
-	api.sectionConstructor['gp-upsell-section'] = api.Section.extend( {
+(function($, api) {
+	api.sectionConstructor['gp-upsell-section'] = api.Section.extend({
 
 		// No events for this type of section.
-		attachEvents: function () {},
+		attachEvents: function() {},
 
 		// Always make the section active.
-		isContextuallyActive: function () {
+		isContextuallyActive: function() {
 			return true;
 		}
-	} );
-} )( jQuery, wp.customize );
+	});
+})(jQuery, wp.customize);

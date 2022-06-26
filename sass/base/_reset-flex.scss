@@ -1,29 +1,29 @@
-html,
+blockquote,
 body,
-p,
-ol,
-ul,
-li,
+dd,
 dl,
 dt,
-dd,
-blockquote,
-figure,
 fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
+figure,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-  padding: 0;
-  border: 0;
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 html {
@@ -33,41 +33,33 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 /**
  * Render the `main` element consistently in IE.
  */
-
 main {
 	display: block;
 }
-
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-
 progress {
 	vertical-align: baseline;
 }
-
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-
 html {
 	box-sizing: border-box;
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
 	box-sizing: inherit;
 }
-
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
 */
-
 button,
 input,
 optgroup,
@@ -77,23 +69,22 @@ textarea {
 	font-size: 100%;
 	margin: 0;
 }
-
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
+
 [type="search"] {
 	-webkit-appearance: textfield;
 	outline-offset: -2px;
 }
-
- /**
+/**
   * Remove the inner padding in Chrome and Safari on macOS.
   */
+
 [type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
- }
-
+}
 /**
  * Remove the inner border and padding in Firefox.
  */
@@ -101,7 +92,6 @@ textarea {
 	border-style: none;
 	padding: 0;
 }
-
 /**
  * Restore the focus styles unset by the previous rule.
  */

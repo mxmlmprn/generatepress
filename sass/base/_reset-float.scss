@@ -1,60 +1,60 @@
-html,
-body,
-div,
-span,
+a,
+abbr,
+acronym,
+address,
 applet,
-object,
-iframe,
+big,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
+html,
+iframe,
 ins,
 kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
 q,
 s,
 samp,
 small,
+span,
 strike,
 strong,
 sub,
 sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
 table,
-caption,
 tbody,
+td,
 tfoot,
+th,
 thead,
 tr,
-th,
-td {
+tt,
+ul,
+var {
 	border: 0;
 	margin: 0;
 	padding: 0;
@@ -63,7 +63,7 @@ td {
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
+	-ms-text-size-adjust: 100%;
 }
 
 article,
@@ -102,23 +102,24 @@ ul {
 	list-style: none;
 }
 
-table { /* tables still need 'cellspacing="0"' in the markup */
+table {
+	/* tables still need 'cellspacing="0"' in the markup */
 	border-collapse: separate;
 	border-spacing: 0;
 }
 
 caption,
-th,
-td {
+td,
+th {
 	font-weight: normal;
 	text-align: left;
 	padding: 5px;
 }
 
-blockquote:before,
 blockquote:after,
-q:before,
-q:after {
+blockquote:before,
+q:after,
+q:before {
 	content: "";
 }
 

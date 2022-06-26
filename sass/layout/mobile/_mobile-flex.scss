@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 # Mobile Menu
 --------------------------------------------------------------*/
-
 .menu-toggle,
 .mobile-bar-items,
 .sidebar-nav-mobile {
@@ -18,16 +17,16 @@
 	cursor: pointer;
 
 	.mobile-menu {
-        padding-left: 3px;
-    }
+		padding-left: 3px;
+	}
 
-    .gp-icon + .mobile-menu {
-        padding-left: 9px;
-    }
+	.gp-icon + .mobile-menu {
+		padding-left: 9px;
+	}
 
-    .mobile-menu:empty {
-        display: none;
-    }
+	.mobile-menu:empty {
+		display: none;
+	}
 }
 
 button.menu-toggle {
@@ -36,11 +35,11 @@ button.menu-toggle {
 	border: 0;
 	text-align: center;
 
-	&:hover,
-    &:active,
-    &:focus {
-        background-color: transparent;
-    }
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: transparent;
+	}
 }
 
 .has-menu-bar-items {
@@ -136,28 +135,27 @@ nav.toggled {
 	margin-right: auto;
 	flex-direction: row-reverse;
 }
-
 /*--------------------------------------------------------------
 ## Breakpoint (768px)
 --------------------------------------------------------------*/
-
 @media (max-width: 768px) {
- 	.hide-on-mobile {
+	.hide-on-mobile {
 		display: none !important;
 	}
-
 	/*--------------------------------------------------------------
 	## Links
 	--------------------------------------------------------------*/
-
-	a, body, button, input, select, textarea {
+	a,
+	body,
+	button,
+	input,
+	select,
+	textarea {
 		transition: all 0s ease-in-out;
 	}
-
 	/*--------------------------------------------------------------
 	## Header
 	--------------------------------------------------------------*/
-
 	.inside-header {
 		flex-direction: column;
 		text-align: center;
@@ -169,11 +167,9 @@ nav.toggled {
 		margin-right: auto;
 		text-align: center;
 	}
-
 	/*--------------------------------------------------------------
 	## Content Area
 	--------------------------------------------------------------*/
-
 	.site-content {
 		flex-direction: column;
 	}
@@ -192,10 +188,10 @@ nav.toggled {
 		margin-top: 0;
 	}
 
-	.both-right .inside-left-sidebar,
 	.both-left .inside-left-sidebar,
-	.both-right .inside-right-sidebar,
-	.both-left .inside-right-sidebar {
+	.both-left .inside-right-sidebar,
+	.both-right .inside-left-sidebar,
+	.both-right .inside-right-sidebar {
 		margin-right: 0;
 		margin-left: 0;
 	}
@@ -230,13 +226,11 @@ nav.toggled {
 		}
 	}
 }
-
 @media (min-width: 769px) and (max-width: 1024px) {
 	.hide-on-tablet {
 		display: none !important;
 	}
 }
-
 @media (min-width: 1025px) {
 	.hide-on-desktop {
 		display: none !important;

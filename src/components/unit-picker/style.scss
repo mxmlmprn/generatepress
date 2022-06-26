@@ -3,7 +3,7 @@
 }
 
 .generate-component-input-with-unit {
-    display: flex;
+	display: flex;
 	align-items: center;
 
 	& > div:not(.components-generate--control__units) {
@@ -27,7 +27,7 @@
 
 .generate-component-control--unit-picker {
 	button {
-    	height: auto;
+		height: auto;
 		min-height: 30px;
 		margin-left: 2px;
 		border: 1px solid #444;
@@ -40,7 +40,7 @@
 }
 
 .components-generate--control-buttons__units {
-    display: flex;
+	display: flex;
 
 	button.components-button {
 		text-transform: uppercase;

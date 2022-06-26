@@ -1,5 +1,5 @@
 .components-base-control__help {
-    margin-top: 2px;
+	margin-top: 2px;
 	margin-bottom: 0;
 }
 
@@ -24,7 +24,7 @@
 
 .generate-customize-control-wrapper[data-wrapper-type="two-col"] {
 	& > div {
-    	flex-basis: calc(50% - 5px);
+		flex-basis: calc(50% - 5px);
 
 		&:nth-child(odd) {
 			margin-right: 5px;
@@ -53,9 +53,9 @@
 }
 
 #customize-control-generate_settings-google_font_display {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
 
 	.description {
 		order: 10;

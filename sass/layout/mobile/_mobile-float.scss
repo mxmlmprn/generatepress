@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 # Mobile Menu
 --------------------------------------------------------------*/
-
 .menu-toggle,
 .mobile-bar-items,
 .sidebar-nav-mobile {
@@ -25,9 +24,9 @@ button.menu-toggle {
 	text-align: center;
 }
 
-button.menu-toggle:hover,
 button.menu-toggle:active,
-button.menu-toggle:focus {
+button.menu-toggle:focus,
+button.menu-toggle:hover {
 	background-color: transparent;
 }
 
@@ -36,7 +35,7 @@ button.menu-toggle:focus {
 }
 
 .menu-toggle .gp-icon + .mobile-menu {
-    padding-left: 9px;
+	padding-left: 9px;
 }
 
 .menu-toggle .mobile-menu:empty {
@@ -66,8 +65,8 @@ nav.toggled ul ul.sub-menu {
 
 .dropdown-hover {
 	.main-navigation.toggled ul {
-		li:hover > ul,
-		li.sfHover > ul {
+		li.sfHover > ul,
+		li:hover > ul {
 			transition-delay: 0s;
 		}
 	}
@@ -123,24 +122,24 @@ nav.toggled ul ul.sub-menu {
 	float: none;
 	display: inline-block;
 }
-
 /*--------------------------------------------------------------
 # Breakpoint (768px)
 --------------------------------------------------------------*/
-
 @media (max-width: 768px) {
 	/*--------------------------------------------------------------
 	## Links
 	--------------------------------------------------------------*/
-
-	a, body, button, input, select, textarea {
+	a,
+	body,
+	button,
+	input,
+	select,
+	textarea {
 		transition: all 0s ease-in-out;
 	}
-
 	/*--------------------------------------------------------------
 	## Top Bar
 	--------------------------------------------------------------*/
-
 	.top-bar.top-bar-align-left,
 	.top-bar.top-bar-align-right {
 		text-align: center;
@@ -158,23 +157,21 @@ nav.toggled ul ul.sub-menu {
 	}
 
 	.footer-bar .widget_nav_menu li:first-child {
-        margin-left: 10px;
-    }
+		margin-left: 10px;
+	}
 
-    .footer-bar .widget_nav_menu li:last-child {
-        margin-right: 10px;
-    }
-
+	.footer-bar .widget_nav_menu li:last-child {
+		margin-right: 10px;
+	}
 	/*--------------------------------------------------------------
 	## Header
 	--------------------------------------------------------------*/
-
 	.inside-header > *:not(:last-child):not(.main-navigation) {
 		margin-bottom: 20px;
 	}
 
-	.site-header,
-	.header-aligned-right .site-header {
+	.header-aligned-right .site-header,
+	.site-header {
 		text-align: center;
 	}
 
@@ -183,14 +180,12 @@ nav.toggled ul ul.sub-menu {
 		max-width: 100%;
 		text-align: center;
 	}
-
 	/*--------------------------------------------------------------
 	## Content Area
 	--------------------------------------------------------------*/
-
-	.sidebar,
 	.content-area,
-	.inside-footer-widgets > div {
+	.inside-footer-widgets > div,
+	.sidebar {
 		float: none;
 		width: 100%;
 		left: 0;
@@ -214,10 +209,10 @@ nav.toggled ul ul.sub-menu {
 		margin-top: 0;
 	}
 
-	.both-right.separate-containers .inside-left-sidebar,
 	.both-left.separate-containers .inside-left-sidebar,
-	.both-right.separate-containers .inside-right-sidebar,
-	.both-left.separate-containers .inside-right-sidebar {
+	.both-left.separate-containers .inside-right-sidebar,
+	.both-right.separate-containers .inside-left-sidebar,
+	.both-right.separate-containers .inside-right-sidebar {
 		margin-right: 0;
 		margin-left: 0;
 	}
@@ -256,11 +251,9 @@ nav.toggled ul ul.sub-menu {
 			line-height: 1.8em;
 		}
 	}
-
 	/*--------------------------------------------------------------
 	## Footer
 	--------------------------------------------------------------*/
-
 	.site-info {
 		text-align: center;
 	}

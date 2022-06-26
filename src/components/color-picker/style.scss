@@ -14,8 +14,8 @@
 			height: 150px;
 		}
 
-		.react-colorful__hue,
-		.react-colorful__alpha {
+		.react-colorful__alpha,
+		.react-colorful__hue {
 			width: calc(100% - 40px);
 		}
 
@@ -53,12 +53,12 @@
 		min-width: auto;
 	}
 
-    .generate-component-color-picker-palette {
-        padding: 16px 0 0;
+	.generate-component-color-picker-palette {
+		padding: 16px 0 0;
 
 		.components-circular-option-picker {
-		    display: flex;
-		    flex-wrap: wrap;
+			display: flex;
+			flex-wrap: wrap;
 
 			.components-circular-option-picker__swatches {
 				display: flex;
@@ -70,11 +70,11 @@
 				}
 			}
 		}
-    }
+	}
 
 	.components-color-palette {
-        margin: 0;
-    }
+		margin: 0;
+	}
 
 	.components-color-picker {
 		padding: 5px;
@@ -82,7 +82,7 @@
 	}
 
 	.components-color-picker__body {
-	    padding-bottom: 0;
+		padding-bottom: 0;
 	}
 
 	.components-popover__content {
@@ -122,22 +122,21 @@
 	}
 }
 
-
 .generate-component-color-picker-wrapper {
-    > .components-base-control__field {
+	> .components-base-control__field {
 		position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-        .components-color-palette__item-wrapper {
-            margin: 0;
-        }
+		.components-color-palette__item-wrapper {
+			margin: 0;
+		}
 	}
 }
 
-.generate-component-color-picker-palette,
-.generate-color-picker-area {
+.generate-color-picker-area,
+.generate-component-color-picker-palette {
 	button {
 		width: 28px;
 		height: 28px;
@@ -176,7 +175,7 @@
 	}
 
 	.components-color-picker__body {
-	    padding-bottom: 0;
+		padding-bottom: 0;
 	}
 
 	.components-color-clear-color {
@@ -191,14 +190,14 @@
 }
 
 .generate-color-input--icon {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 5px;
-    border: 1px solid currentColor;
-    border-right: 0;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: 5px;
+	border: 1px solid currentColor;
+	border-right: 0;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
 
 	svg {
 		height: 1em;
@@ -208,11 +207,11 @@
 }
 
 .generate-color-option-area {
-    padding: 16px 16px 0;
+	padding: 16px 16px 0;
 }
 
 .generate-color-input--css-var-name-wrapper {
-    position: relative;
+	position: relative;
 
 	button {
 		position: absolute;

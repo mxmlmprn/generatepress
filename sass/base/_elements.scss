@@ -41,7 +41,7 @@ blockquote {
 	border-left: 5px solid rgba(0, 0, 0, 0.05);
 	padding: 20px;
 	font-size: 1.2em;
-	font-style:italic;
+	font-style: italic;
 	margin: 0 0 1.5em;
 	position: relative;
 }
@@ -51,8 +51,8 @@ blockquote p:last-child {
 }
 
 table,
-th,
-td {
+td,
+th {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -64,8 +64,8 @@ table {
 	width: 100%;
 }
 
-th,
-td {
+td,
+th {
 	padding: 8px;
 }
 
@@ -134,8 +134,8 @@ h6 {
 	margin-bottom: 20px;
 }
 
-ul,
-ol {
+ol,
+ul {
 	margin: 0 0 1.5em 3em;
 }
 
@@ -147,8 +147,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li > ol,
+li > ul {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -166,8 +166,8 @@ strong {
 	font-weight: bold;
 }
 
-dfn,
 cite,
+dfn,
 em,
 i {
 	font-style: italic;
@@ -190,13 +190,13 @@ acronym {
 	cursor: help;
 }
 
-mark,
-ins {
+ins,
+mark {
 	text-decoration: none;
 }
 
-sup,
-sub {
+sub,
+sup {
 	font-size: 75%;
 	height: 0;
 	line-height: 0;
@@ -209,7 +209,7 @@ sup {
 }
 
 sub {
-	top: .5ex;
+	top: 0.5ex;
 }
 
 small {
@@ -234,6 +234,8 @@ th {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
 }

@@ -8,39 +8,37 @@
 	max-width: $container-width;
 }
 
-.sidebar .widget,
 .page-header,
+.sidebar .widget,
 .site-main > * {
 	margin-bottom: $separating-space;
 }
 
-.both-right .inside-left-sidebar,
-.both-left .inside-left-sidebar {
+.both-left .inside-left-sidebar,
+.both-right .inside-left-sidebar {
 	margin-right: $separating-space / 2;
 }
 
-.both-right .inside-right-sidebar,
-.both-left .inside-right-sidebar {
+.both-left .inside-right-sidebar,
+.both-right .inside-right-sidebar {
 	margin-left: $separating-space / 2;
 }
-
 /*--------------------------------------------------------------
 ## One Container
 --------------------------------------------------------------*/
-
 .one-container {
-	&.right-sidebar .site-main,
-	&.both-right .site-main {
+	&.both-right .site-main,
+	&.right-sidebar .site-main {
 		margin-right: $element-padding;
 	}
 
-	&.left-sidebar .site-main,
-	&.both-left .site-main {
+	&.both-left .site-main,
+	&.left-sidebar .site-main {
 		margin-left: $element-padding;
 	}
 
 	&.both-sidebars .site-main {
-		margin: 0px $element-padding 0px $element-padding;
+		margin: 0 $element-padding;
 	}
 
 	&.archive .post:not(:last-child),
@@ -52,14 +50,12 @@
 		padding: $element-padding;
 	}
 }
-
 /*--------------------------------------------------------------
 ## Separate Containers
 --------------------------------------------------------------*/
-
 .separate-containers {
-	.inside-article,
 	.comments-area,
+	.inside-article,
 	.page-header,
 	.paging-navigation {
 		padding: $element-padding;
@@ -74,18 +70,18 @@
 		margin-right: 0;
 	}
 
-	&.right-sidebar .site-main,
-	&.both-right .site-main {
+	&.both-right .site-main,
+	&.right-sidebar .site-main {
 		margin-left: 0;
 	}
 
-	&.left-sidebar .site-main,
-	&.both-left .site-main {
+	&.both-left .site-main,
+	&.left-sidebar .site-main {
 		margin-right: 0;
 	}
 
-	.inside-right-sidebar,
-	.inside-left-sidebar {
+	.inside-left-sidebar,
+	.inside-right-sidebar {
 		margin-top: $separating-space;
 		margin-bottom: $separating-space;
 	}

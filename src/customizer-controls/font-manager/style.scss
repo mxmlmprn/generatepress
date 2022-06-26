@@ -1,5 +1,5 @@
 .generate-font-manager--item {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 
 	.generate-font-manager--header {
 		display: flex;
@@ -106,7 +106,7 @@
 
 .generate-font-manager-group {
 	margin-top: 10px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 
 	&__label {
 		margin-top: 0;
@@ -122,10 +122,10 @@
 }
 
 .generate-customize-control--font-dropdown {
-    background: #fff;
-    padding: 15px;
-    margin-top: 10px;
-    position: relative;
+	background: #fff;
+	padding: 15px;
+	margin-top: 10px;
+	position: relative;
 
 	&:before {
 		content: "";

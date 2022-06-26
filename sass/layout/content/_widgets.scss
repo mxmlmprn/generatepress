@@ -1,13 +1,13 @@
 .widget-area .widget {
-    padding: $element-padding;
+	padding: $element-padding;
 }
 
 .widget select {
 	max-width: 100%;
 }
 
-.sidebar .widget *:last-child,
-.footer-widgets .widget *:last-child {
+.footer-widgets .widget *:last-child,
+.sidebar .widget *:last-child {
 	margin-bottom: 0;
 }
 
@@ -19,8 +19,8 @@
 	text-transform: none;
 }
 
-.widget ul,
-.widget ol {
+.widget ol,
+.widget ul {
 	margin: 0;
 }
 

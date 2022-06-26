@@ -7,13 +7,13 @@
 	box-sizing: border-box;
 }
 
-.widget:last-child,
-.separate-containers .widget:last-child {
+.separate-containers .widget:last-child,
+.widget:last-child {
 	margin-bottom: 0;
 }
 
-.sidebar .widget,
-.footer-widgets .widget {
+.footer-widgets .widget,
+.sidebar .widget {
 	font-size: 17px;
 }
 

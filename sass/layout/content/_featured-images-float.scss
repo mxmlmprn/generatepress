@@ -4,7 +4,8 @@
 
 .page-header-image,
 .page-header-image-single {
-	line-height: 0; /* no more weird spacing */
+	line-height: 0;
+	/* no more weird spacing */
 }
 
 .separate-containers .inside-article > [class*="page-header-"],
@@ -18,11 +19,11 @@
 }
 
 .separate-containers {
-	.page-header-image,
 	.page-header-contained,
 	.page-header-content,
-	.page-header-image-single,
-	.page-header-content-single {
+	.page-header-content-single,
+	.page-header-image,
+	.page-header-image-single {
 		margin-top: $separating-space;
 	}
 }

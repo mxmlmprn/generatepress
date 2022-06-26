@@ -3,7 +3,7 @@ import SettingsButton from './Typography/SettingsButton';
 import DeleteButton from './Typography/DeleteButton';
 import TypographySettings from './TypographySettings';
 
-const Typography = ( props ) => {
+const Typography = (props) => {
 	const {
 		font,
 		label,
@@ -16,30 +16,69 @@ const Typography = ( props ) => {
 		onChangeElement,
 	} = props;
 
-	return (
-		<div className="generate-font-manager--item">
+	return ( <
+		div className = "generate-font-manager--item" >
 
-			<div className="generate-font-manager--header">
-				<Label
-					font={ font }
-					itemId={ itemId }
-					setOpen={ setOpen }
-					isOpen={ isOpen }
-					label={ label }
-				/>
-				<SettingsButton itemId={ itemId } setOpen={ setOpen } isOpen={ isOpen } />
-				<DeleteButton onClick={ deleteFont.bind( null, font.index ) } isOpen={ isOpen } itemId={ itemId } />
-			</div>
+		<
+		div className = "generate-font-manager--header" >
+		<
+		Label font = {
+			font
+		}
+		itemId = {
+			itemId
+		}
+		setOpen = {
+			setOpen
+		}
+		isOpen = {
+			isOpen
+		}
+		label = {
+			label
+		}
+		/> <
+		SettingsButton itemId = {
+			itemId
+		}
+		setOpen = {
+			setOpen
+		}
+		isOpen = {
+			isOpen
+		}
+		/> <
+		DeleteButton onClick = {
+			deleteFont.bind(null, font.index)
+		}
+		isOpen = {
+			isOpen
+		}
+		itemId = {
+			itemId
+		}
+		/> <
+		/div>
 
-			{ itemId === isOpen &&
-				<TypographySettings
-					font={ font }
-					toggleClose={ toggleClose }
-					onChangeFontValue={ onChangeFontValue }
-					onChangeElement={ onChangeElement }
-				/>
+		{
+			itemId === isOpen &&
+				<
+				TypographySettings
+			font = {
+				font
 			}
-		</div>
+			toggleClose = {
+				toggleClose
+			}
+			onChangeFontValue = {
+				onChangeFontValue
+			}
+			onChangeElement = {
+				onChangeElement
+			}
+			/>
+		} <
+		/div>
 	);
 };
 

@@ -1,7 +1,7 @@
 .site-main {
 	.comment-navigation,
-	.posts-navigation,
-	.post-navigation {
+	.post-navigation,
+	.posts-navigation {
 		margin: 0 0 2em;
 		overflow: hidden;
 	}
@@ -12,8 +12,8 @@
 }
 
 .paging-navigation {
-	.nav-previous,
-	.nav-next {
+	.nav-next,
+	.nav-previous {
 		display: none;
 	}
 
@@ -27,8 +27,8 @@
 		}
 	}
 }
-
 /* Less specific so we don't overwrite existing customizations. */
+
 .nav-links > *:first-child {
 	padding-left: 0;
 }

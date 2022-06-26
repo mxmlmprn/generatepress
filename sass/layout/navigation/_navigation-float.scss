@@ -17,20 +17,20 @@
 	clear: left;
 }
 
-.nav-aligned-right .main-navigation:not(.toggled) .menu > li,
-.nav-aligned-center .main-navigation:not(.toggled) .menu > li {
+.nav-aligned-center .main-navigation:not(.toggled) .menu > li,
+.nav-aligned-right .main-navigation:not(.toggled) .menu > li {
 	float: none;
 	display: inline-block;
 }
 
-.nav-aligned-right .main-navigation:not(.toggled) ul,
-.nav-aligned-center .main-navigation:not(.toggled) ul {
+.nav-aligned-center .main-navigation:not(.toggled) ul,
+.nav-aligned-right .main-navigation:not(.toggled) ul {
 	letter-spacing: -0.31em;
 	font-size: 1em;
 }
 
-.nav-aligned-right .main-navigation:not(.toggled) ul li,
-.nav-aligned-center .main-navigation:not(.toggled) ul li {
+.nav-aligned-center .main-navigation:not(.toggled) ul li,
+.nav-aligned-right .main-navigation:not(.toggled) ul li {
 	letter-spacing: normal;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .main-navigation .mobile-bar-items a {
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 60px;
 }

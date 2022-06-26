@@ -1,11 +1,11 @@
 .components-generate-units-control-header__units {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	align-items: center;
 }
 
-.components-generate-control__units{
+.components-generate-control__units {
 	.components-generate-control-buttons__units {
 		button.components-button {
 			background: #fff;
@@ -19,8 +19,8 @@
 			border: 0;
 			border-radius: 0 !important;
 			line-height: 20px;
-    		padding: 0 5px;
-    		height: auto;
+			padding: 0 5px;
+			height: auto;
 
 			&.is-primary {
 				background: #fff !important;
@@ -36,12 +36,12 @@
 .generate-component-device-field[data-device="desktop"],
 .generate-component-device-field[data-device="tablet"],
 .generate-component-device-field[data-device="mobile"] {
-    display: none;
+	display: none;
 }
 
 .preview-desktop {
 	.generate-component-device-field[data-device="desktop"] {
-    	display: block;
+		display: block;
 	}
 
 	.components-generate-control__units button.components-generate-control-button__units--desktop {
@@ -51,7 +51,7 @@
 
 .preview-tablet {
 	.generate-component-device-field[data-device="tablet"] {
-    	display: block;
+		display: block;
 	}
 
 	.components-generate-control__units button.components-generate-control-button__units--tablet {
@@ -61,7 +61,7 @@
 
 .preview-mobile {
 	.generate-component-device-field[data-device="mobile"] {
-    	display: block;
+		display: block;
 	}
 
 	.components-generate-control__units button.components-generate-control-button__units--mobile {

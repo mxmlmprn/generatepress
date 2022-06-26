@@ -20,7 +20,7 @@ const elements = {
 	body: {
 		module: 'core',
 		group: 'base',
-		label: __( 'Body', 'generatepress' ),
+		label: __('Body', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '17',
@@ -48,7 +48,7 @@ const elements = {
 	'main-title': {
 		module: 'core',
 		group: 'header',
-		label: __( 'Site Title', 'generatepress' ),
+		label: __('Site Title', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '25',
@@ -62,7 +62,7 @@ const elements = {
 	'site-description': {
 		module: 'core',
 		group: 'header',
-		label: __( 'Site Description', 'generatepress' ),
+		label: __('Site Description', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '15',
@@ -76,7 +76,7 @@ const elements = {
 	'primary-menu-items': {
 		module: 'core',
 		group: 'primaryNavigation',
-		label: __( 'Primary Menu Items', 'generatepress' ),
+		label: __('Primary Menu Items', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '15',
@@ -90,7 +90,7 @@ const elements = {
 	'primary-sub-menu-items': {
 		module: 'core',
 		group: 'primaryNavigation',
-		label: __( 'Primary Sub-Menu Items', 'generatepress' ),
+		label: __('Primary Sub-Menu Items', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '14',
@@ -104,7 +104,7 @@ const elements = {
 	'primary-menu-toggle': {
 		module: 'core',
 		group: 'primaryNavigation',
-		label: __( 'Primary Mobile Menu Toggle', 'generatepress' ),
+		label: __('Primary Mobile Menu Toggle', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '15',
@@ -118,7 +118,7 @@ const elements = {
 	buttons: {
 		module: 'core',
 		group: 'content',
-		label: __( 'Buttons', 'generatepress' ),
+		label: __('Buttons', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '',
@@ -131,7 +131,7 @@ const elements = {
 	'all-headings': {
 		module: 'core',
 		group: 'content',
-		label: __( 'All Headings', 'generatepress' ),
+		label: __('All Headings', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '',
@@ -154,7 +154,7 @@ const elements = {
 	h1: {
 		module: 'core',
 		group: 'content',
-		label: __( 'Heading 1 (H1)', 'generatepress' ),
+		label: __('Heading 1 (H1)', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: 42,
@@ -179,7 +179,7 @@ const elements = {
 	'single-content-title': {
 		module: 'core',
 		group: 'content',
-		label: __( 'Single Content Title (H1)', 'generatepress' ),
+		label: __('Single Content Title (H1)', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '',
@@ -192,7 +192,7 @@ const elements = {
 	h2: {
 		module: 'core',
 		group: 'content',
-		label: __( 'Heading 2 (H2)', 'generatepress' ),
+		label: __('Heading 2 (H2)', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: 35,
@@ -217,7 +217,7 @@ const elements = {
 	'archive-content-title': {
 		module: 'core',
 		group: 'content',
-		label: __( 'Archive Content Title (H2)', 'generatepress' ),
+		label: __('Archive Content Title (H2)', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: '',
@@ -230,7 +230,7 @@ const elements = {
 	h3: {
 		module: 'core',
 		group: 'content',
-		label: __( 'Heading 3 (H3)', 'generatepress' ),
+		label: __('Heading 3 (H3)', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: 29,
@@ -255,7 +255,7 @@ const elements = {
 	h4: {
 		module: 'core',
 		group: 'content',
-		label: __( 'Heading 4 (H4)', 'generatepress' ),
+		label: __('Heading 4 (H4)', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: 24,
@@ -279,7 +279,7 @@ const elements = {
 	h5: {
 		module: 'core',
 		group: 'content',
-		label: __( 'Heading 5 (H5)', 'generatepress' ),
+		label: __('Heading 5 (H5)', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: 20,
@@ -303,7 +303,7 @@ const elements = {
 	h6: {
 		module: 'core',
 		group: 'content',
-		label: __( 'Heading 6 (H6)', 'generatepress' ),
+		label: __('Heading 6 (H6)', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				min: 15,
@@ -326,7 +326,7 @@ const elements = {
 	'top-bar': {
 		module: 'core',
 		group: 'widgets',
-		label: __( 'Top Bar', 'generatepress' ),
+		label: __('Top Bar', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: 13,
@@ -340,7 +340,7 @@ const elements = {
 	'widget-titles': {
 		module: 'core',
 		group: 'widgets',
-		label: __( 'Widget Titles', 'generatepress' ),
+		label: __('Widget Titles', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: 20,
@@ -358,7 +358,7 @@ const elements = {
 	footer: {
 		module: 'core',
 		group: 'footer',
-		label: __( 'Footer Bar', 'generatepress' ),
+		label: __('Footer Bar', 'generatepress'),
 		placeholders: {
 			fontSize: {
 				value: 15,
@@ -372,7 +372,7 @@ const elements = {
 	custom: {
 		module: 'core',
 		group: 'other',
-		label: __( 'Custom', 'generatepress' ),
+		label: __('Custom', 'generatepress'),
 		placeholders: {},
 	},
 };

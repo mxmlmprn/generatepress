@@ -58,7 +58,7 @@
 		}
 
 		.widget:first-child:last-child {
-			display: block
+			display: block;
 		}
 	}
 }
@@ -67,12 +67,12 @@
 	text-align: right;
 
 	.inside-top-bar {
-		& >.widget:nth-child(even) {
+		& > .widget:nth-child(even) {
 			float: left;
 			margin-right: 10px;
 		}
 
-		& >.widget:nth-child(odd) {
+		& > .widget:nth-child(odd) {
 			margin-left: 10px;
 		}
 	}
@@ -85,7 +85,7 @@
 			margin-right: 10px;
 		}
 
-		& >.widget:nth-child(even) {
+		& > .widget:nth-child(even) {
 			margin-left: 10px;
 			float: right;
 		}

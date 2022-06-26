@@ -1,9 +1,8 @@
 /*--------------------------------------------------------------
 ## Footer Widgets
 --------------------------------------------------------------*/
-
 .footer-widgets-container {
-    padding: $element-padding;
+	padding: $element-padding;
 }
 
 .inside-footer-widgets {
@@ -16,21 +15,19 @@
 
 .site-footer .footer-widgets-container {
 	.inner-padding {
-		padding: 0px 0px 0px $element-padding;
+		padding: 0 0 0 $element-padding;
 	}
 
 	.inside-footer-widgets {
 		margin-left: -$element-padding;
 	}
 }
-
 /*--------------------------------------------------------------
 ## Top Bar
 --------------------------------------------------------------*/
-
 .top-bar {
 	font-weight: normal;
-    text-transform: none;
+	text-transform: none;
 	font-size: 13px;
 
 	.inside-top-bar {
@@ -141,11 +138,9 @@ div.top-bar .widget {
 		}
 	}
 }
-
 /*--------------------------------------------------------------
 ## Footer Bar
 --------------------------------------------------------------*/
-
 .footer-bar-active .footer-bar .widget {
 	padding: 0;
 }
@@ -207,17 +202,13 @@ div.top-bar .widget {
 .site-footer:not(.footer-bar-active) .copyright-bar {
 	margin: 0 auto;
 }
-
 /*--------------------------------------------------------------
 ## Breakpoint (768px)
 --------------------------------------------------------------*/
-
 @media (max-width: 768px) {
-
 	/*--------------------------------------------------------------
 	## Top Bar
 	--------------------------------------------------------------*/
-
 	.top-bar {
 		.inside-top-bar {
 			justify-content: center;
@@ -244,11 +235,9 @@ div.top-bar .widget {
 	.top-bar-align-center {
 		text-align: center;
 	}
-
 	/*--------------------------------------------------------------
 	## Footer
 	--------------------------------------------------------------*/
-
 	.inside-footer-widgets {
 		flex-direction: column;
 
@@ -293,7 +282,7 @@ div.top-bar .widget {
 				&:last-child {
 					margin-right: 10px;
 				}
-		   }
+			}
 		}
 	}
 
