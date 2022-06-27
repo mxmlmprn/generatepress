@@ -1,0 +1,149 @@
+.main-navigation {
+  .inside-navigation {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .main-nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  li {
+    position: relative;
+  }
+
+  .menu-bar-items {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+    & a {
+      color: inherit;
+    }
+  }
+
+  .menu-bar-item {
+    position: relative;
+
+    &.search-item {
+      z-index: 20;
+    }
+
+    & > a {
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 60px;
+    }
+  }
+
+  & li.search-item {
+    float: right;
+  }
+
+  & .social-nav > ul > li > a {
+    font-size: 24px;
+    color: black;
+  }
+
+  & .mobile-bar-items a {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 60px;
+  }
+  & .main-nav ul li:hover > a,
+  & .main-nav ul li:focus > a,
+  & .main-nav ul li.sfHover > a,
+  & .menu-bar-item:hover > a,
+  & .menu-bar-item.sfHover > a {
+    color: $color__link-hover-main-nav;
+    background-color: $color__background-main-nav-default;
+  }
+
+  & .main-nav ul li[class*="current-menu-"] > a {
+    color: $color__link-hover-main-nav;
+    background-color: $color__background-main-nav-default;
+  }
+  & .main-nav ul li[class*="current-menu-"] > a:hover,
+  & .main-nav ul li[class*="current-menu-"].sfHover > a {
+    color: $color__link-hover-main-nav;
+    background-color: $color__background-main-nav-default;
+  }
+}
+
+/*===== User navigation =====*/
+.sub-navigation {
+  display: flex;
+  & > .user-nav > a {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+  }
+  & a {
+    text-transform: uppercase;
+    margin-left: 12px;
+  }
+  & hr {
+    margin: 8px 0;
+    height: 1px;
+    background-color: $color__border-default;
+    width: 100%;
+  }
+  & button {
+    width: 72px;
+  }
+}
+
+.nav-below-header .main-navigation .inside-navigation.grid-container,
+.nav-above-header .main-navigation .inside-navigation.grid-container {
+  padding: 0px 20px;
+}
+.main-navigation .main-nav ul li a,
+.menu-toggle,
+.main-navigation .menu-bar-items {
+  color: $color__link-main-nav;
+  background-color: $color__background-main-nav-default;
+}
+
+.sidebar {
+  .main-navigation {
+    .main-nav {
+      flex-basis: 100%;
+    }
+
+    .main-nav > ul {
+      flex-direction: column;
+    }
+
+    .menu-bar-items {
+      margin: 0 auto;
+
+      .search-item {
+        order: 10;
+      }
+    }
+  }
+}
+
+.nav-align-center {
+  .inside-navigation {
+    justify-content: center;
+  }
+
+  .main-nav > ul {
+    justify-content: center;
+  }
+}
+
+.nav-align-right .inside-navigation {
+  justify-content: flex-end;
+}

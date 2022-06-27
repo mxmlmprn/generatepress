@@ -1,88 +1,195 @@
 .site-content {
-	display: flex;
+  display: flex;
+}
+
+.site-content .content-area {
+  width: 70%;
+}
+
+.sidebar .widget,
+.page-header,
+.site-main > * {
+  margin-bottom: 20px;
 }
 
 .grid-container {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container-width;
 }
 
 .page-header,
 .sidebar .widget,
 .site-main > * {
-	margin-bottom: $separating-space;
+  margin-bottom: $separating-space;
 }
 
 .both-left .inside-left-sidebar,
 .both-right .inside-left-sidebar {
-	margin-right: $separating-space / 2;
+  margin-right: $separating-space / 2;
 }
 
 .both-left .inside-right-sidebar,
 .both-right .inside-right-sidebar {
-	margin-left: $separating-space / 2;
+  margin-left: $separating-space / 2;
 }
 /*--------------------------------------------------------------
 ## One Container
 --------------------------------------------------------------*/
 .one-container {
-	&.both-right .site-main,
-	&.right-sidebar .site-main {
-		margin-right: $element-padding;
-	}
+  &.both-right .site-main,
+  &.right-sidebar .site-main {
+    margin-right: $element-padding;
+  }
 
-	&.both-left .site-main,
-	&.left-sidebar .site-main {
-		margin-left: $element-padding;
-	}
+  &.both-left .site-main,
+  &.left-sidebar .site-main {
+    margin-left: $element-padding;
+  }
 
-	&.both-sidebars .site-main {
-		margin: 0 $element-padding;
-	}
+  &.both-sidebars .site-main {
+    margin: 0 $element-padding;
+  }
 
-	&.archive .post:not(:last-child),
-	&.blog .post:not(:last-child) {
-		padding-bottom: $element-padding;
-	}
+  &.archive .post:not(:last-child),
+  &.blog .post:not(:last-child) {
+    padding-bottom: $element-padding;
+  }
 
-	.site-content {
-		padding: $element-padding;
-	}
+  .site-content {
+    padding: $element-padding;
+  }
 }
 /*--------------------------------------------------------------
 ## Separate Containers
 --------------------------------------------------------------*/
 .separate-containers {
-	.comments-area,
-	.inside-article,
-	.page-header,
-	.paging-navigation {
-		padding: $element-padding;
-	}
+  .comments-area,
+  .inside-article,
+  .page-header,
+  .paging-navigation {
+    padding: $element-padding;
+  }
 
-	.site-main {
-		margin: $separating-space;
-	}
+  .site-main {
+    margin: $separating-space;
+  }
 
-	&.no-sidebar .site-main {
-		margin-left: 0;
-		margin-right: 0;
-	}
+  &.no-sidebar .site-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-	&.both-right .site-main,
-	&.right-sidebar .site-main {
-		margin-left: 0;
-	}
+  &.both-right .site-main,
+  &.right-sidebar .site-main {
+    margin-left: 0;
+  }
 
-	&.both-left .site-main,
-	&.left-sidebar .site-main {
-		margin-right: 0;
-	}
+  &.both-left .site-main,
+  &.left-sidebar .site-main {
+    margin-right: 0;
+  }
 
-	.inside-left-sidebar,
-	.inside-right-sidebar {
-		margin-top: $separating-space;
-		margin-bottom: $separating-space;
-	}
+  .inside-left-sidebar,
+  .inside-right-sidebar {
+    margin-top: $separating-space;
+    margin-bottom: $separating-space;
+  }
+}
+
+/*===== Breakpoint (768px) =====*/
+@media (max-width: 768px) {
+  /* Mobile content-area styles (768px) */
+  .sidebar,
+  .content-area,
+  .inside-footer-widgets > div {
+    float: none;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .site-content {
+    flex-direction: column;
+  }
+
+  .site-main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .container .site-content .content-area {
+    width: auto;
+  }
+
+  .is-left-sidebar.sidebar,
+  .is-right-sidebar.sidebar {
+    width: auto;
+    order: initial;
+  }
+
+  .is-left-sidebar + .is-right-sidebar .inside-right-sidebar {
+    margin-top: 0;
+  }
+
+  .both-right .inside-left-sidebar,
+  .both-left .inside-left-sidebar,
+  .both-right .inside-right-sidebar,
+  .both-left .inside-right-sidebar {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  body:not(.no-sidebar) #main {
+    margin-bottom: 0;
+  }
+
+  body:not(.no-sidebar) .site-main {
+    margin-bottom: 0 !important;
+  }
+
+  .one-container .sidebar {
+    margin-top: 40px;
+  }
+
+  .alignleft,
+  .alignright {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comment .children {
+    padding-left: 10px;
+    margin-left: 0;
+  }
+
+  .entry-meta {
+    font-size: inherit;
+    color: #595959;
+  }
+
+  .entry-meta a {
+    line-height: 1.8em;
+  }
+
+  .post-image-aligned-left .post-image,
+  .post-image-aligned-right .post-image {
+    float: none;
+    margin: 2em 0;
+    text-align: center;
+  }
+
+  .edd_download {
+    display: block;
+    float: none !important;
+    margin-bottom: 1.5em;
+    width: 100% !important;
+  }
 }

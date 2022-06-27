@@ -55,15 +55,15 @@ tr,
 tt,
 ul,
 var {
-	border: 0;
-	margin: 0;
-	padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 article,
@@ -76,57 +76,57 @@ header,
 main,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 audio,
 canvas,
 progress,
 video {
-	display: inline-block;
-	vertical-align: baseline;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 audio:not([controls]) {
-	display: none;
-	height: 0;
+  display: none;
+  height: 0;
 }
 
 [hidden],
 template {
-	display: none;
+  display: none;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 table {
-	/* tables still need 'cellspacing="0"' in the markup */
-	border-collapse: separate;
-	border-spacing: 0;
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 caption,
 td,
 th {
-	font-weight: normal;
-	text-align: left;
-	padding: 5px;
+  font-weight: normal;
+  text-align: left;
+  padding: 5px;
 }
 
 blockquote:after,
 blockquote:before,
 q:after,
 q:before {
-	content: "";
+  content: "";
 }
 
 a {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 a img {
-	border: 0;
+  border: 0;
 }

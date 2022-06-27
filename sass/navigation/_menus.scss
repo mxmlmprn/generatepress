@@ -1,0 +1,286 @@
+/* Dropdown menus styles */
+.main-navigation ul ul {
+  display: block;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  float: left;
+  position: absolute;
+  left: -99999px;
+  opacity: 0;
+  z-index: 99999;
+  width: 200px;
+  text-align: left;
+  top: auto;
+  transition: opacity 80ms linear;
+  transition-delay: 0s;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  background-color: $color__background-main-nav;
+
+  & a {
+    display: block;
+  }
+  & li {
+    width: 100%;
+  }
+}
+
+.main-navigation .main-nav ul ul li a {
+  line-height: normal;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.main-navigation .main-nav ul li.menu-item-has-children > a {
+  padding-right: 0;
+  position: relative;
+}
+
+.main-navigation.sub-menu-left .sub-menu {
+  right: 0;
+}
+
+.main-navigation:not(.toggled) ul li:hover > ul,
+.main-navigation:not(.toggled) ul li.sfHover > ul {
+  left: auto;
+  opacity: 1;
+  transition-delay: 150ms;
+  pointer-events: auto;
+  height: auto;
+  overflow: visible;
+}
+
+.main-navigation:not(.toggled) ul ul li:hover > ul,
+.main-navigation:not(.toggled) ul ul li.sfHover > ul {
+  left: 100%;
+  top: 0;
+}
+
+.main-navigation.sub-menu-left:not(.toggled) ul ul li:hover > ul,
+.main-navigation.sub-menu-left:not(.toggled) ul ul li.sfHover > ul {
+  right: 100%;
+  left: auto;
+}
+
+.nav-float-right .main-navigation ul ul ul {
+  top: 0;
+}
+
+.menu-item-has-children .dropdown-menu-toggle {
+  display: inline-block;
+  height: 100%;
+  clear: both;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.menu-item-has-children ul .dropdown-menu-toggle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -10px;
+}
+
+nav ul ul .menu-item-has-children .dropdown-menu-toggle,
+.sidebar .menu-item-has-children .dropdown-menu-toggle {
+  float: right;
+}
+
+.main-navigation ul ul a {
+  display: block;
+}
+
+.main-navigation ul ul li {
+  width: 100%;
+}
+
+/* Mobile menu styles */
+.menu-toggle,
+.mobile-bar-items,
+.sidebar-nav-mobile {
+  display: none;
+}
+
+.menu-toggle {
+  padding: 0 20px;
+  line-height: 60px;
+  margin: 0;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 15px;
+  cursor: pointer;
+  & .mobile-menu {
+    padding-left: 3px;
+  }
+
+  & .gp-icon + .mobile-menu {
+    padding-left: 9px;
+  }
+
+  & .mobile-menu:empty {
+    display: none;
+  }
+}
+
+button.menu-toggle {
+  background-color: $color__background-menu-toggle;
+  flex-grow: 1;
+  width: 100%;
+
+  border: 0;
+  text-align: center;
+  &.menu-toggle:hover,
+  &.menu-toggle:active,
+  &.menu-toggle:focus {
+    background-color: $color__background-hover-menu-toggle;
+  }
+  &:hover,
+  &:focus {
+    color: $color__button-hover-menu-toggle;
+  }
+}
+
+.mobile-menu-control-wrapper .menu-toggle,
+.mobile-menu-control-wrapper .menu-toggle:hover,
+.mobile-menu-control-wrapper .menu-toggle:focus,
+.has-inline-mobile-toggle #site-navigation.toggled {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.has-menu-bar-items button.menu-toggle {
+  flex-grow: 0;
+}
+
+nav.toggled ul ul.sub-menu {
+  width: 100%;
+}
+
+.toggled .menu-item-has-children .dropdown-menu-toggle {
+  padding-left: 20px;
+}
+
+.main-navigation.toggled ul ul {
+  transition: 0s;
+  visibility: hidden;
+}
+
+.main-navigation.toggled .main-nav > ul {
+  display: block;
+}
+
+.dropdown-hover .main-navigation.toggled ul li:hover > ul,
+.dropdown-hover .main-navigation.toggled ul li.sfHover > ul {
+  transition-delay: 0s;
+}
+
+.main-navigation.toggled .main-nav {
+  flex-basis: 100%;
+  order: 3;
+}
+
+.main-navigation.toggled .main-nav > ul {
+  display: block;
+}
+
+.main-navigation.toggled .main-nav li {
+  width: 100%;
+  float: none;
+  clear: both;
+  display: block;
+  text-align: left;
+}
+
+.main-navigation.toggled .main-nav ul ul {
+  transition: 0s;
+  visibility: hidden;
+}
+
+.main-navigation.toggled .main-nav ul ul.toggled-on {
+  position: relative;
+  top: 0;
+  left: auto !important;
+  right: auto !important;
+  width: 100%;
+  pointer-events: auto;
+  height: auto;
+  opacity: 1;
+  display: block;
+  visibility: visible;
+  float: none;
+}
+
+.main-navigation.toggled .main-nav li.hide-on-mobile {
+  display: none !important;
+}
+
+.main-navigation.toggled .menu-item-has-children .dropdown-menu-toggle {
+  float: right;
+}
+
+.main-navigation.toggled .menu li.search-item {
+  display: none !important;
+}
+
+.main-navigation.toggled .sf-menu > li.menu-item-float-right {
+  float: none;
+  display: inline-block;
+}
+
+.nav-search-enabled .main-navigation .menu-toggle {
+  text-align: left;
+}
+
+.mobile-menu-control-wrapper {
+  display: none;
+  margin-left: auto;
+  align-items: center;
+}
+
+.mobile-bar-items {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 21;
+  list-style-type: none;
+}
+
+.mobile-bar-items a {
+  display: inline-block;
+}
+
+.has-inline-mobile-toggle #site-navigation.toggled {
+  margin-top: 1.5em;
+}
+
+.has-inline-mobile-toggle #site-navigation.has-active-search {
+  margin-top: 1.5em;
+}
+
+.has-inline-mobile-toggle
+  #site-navigation.has-active-search
+  .nav-search-active {
+  position: relative;
+}
+
+.has-inline-mobile-toggle
+  #site-navigation.has-active-search
+  .navigation-search
+  input {
+  outline: auto;
+}
+
+.navigation-search input[type="search"],
+.navigation-search input[type="search"]:active,
+.navigation-search input[type="search"]:focus,
+.main-navigation .main-nav ul li.search-item.active > a,
+.main-navigation .menu-bar-items .search-item.active > a {
+  color: $color__background-search;
+  background-color: $color__text-search;
+}
+
+.nav-float-left .mobile-menu-control-wrapper {
+  order: -10;
+  margin-left: 0;
+  margin-right: auto;
+  flex-direction: row-reverse;
+}

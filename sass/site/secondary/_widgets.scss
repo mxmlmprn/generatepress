@@ -1,0 +1,51 @@
+/*===== Widget =====*/
+.widget-area .widget {
+  padding: $element-padding;
+}
+
+.widget-area .main-navigation {
+  margin-bottom: 20px;
+}
+
+.widget select {
+  max-width: 100%;
+}
+
+.footer-widgets .widget *:last-child,
+.sidebar .widget *:last-child {
+  margin-bottom: 0;
+}
+
+.widget-title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.widget ol,
+.widget ul {
+  margin: 0;
+}
+
+.widget .search-field {
+  width: 100%;
+}
+
+/*===== Breakpoint (768px) =====*/
+@media (max-width: 768px) {
+  /* Mobile cached styles (768px) */
+  .widget-area .widget {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+  .footer-widgets-container {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+}

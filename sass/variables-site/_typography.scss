@@ -1,0 +1,31 @@
+$font__family_default: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font__main: sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: normal;
+
+// Font-line
+$font__line-height_default: 1.5;
+$font__line-height_body: 1.5;
+$font__line-height_headings: 1.15;
+$font__line-height_pre: 1.6;
+
+// Font-weight
+$font__weight_light: 300;
+$font__weight_default: 400;
+$font__weight_bold: 700;
+
+// Font-size
+$font__size_title-1: rem(48);
+$font__size_title-2: rem(30);
+$font__size_title_site: rem(25);
+
+$font__size_subtitle: rem(20);
+$font__size_code: 0.9375; //15px
+$font__size_text: 1.0625; //17px
+$font__size_quote: 1.2;
+$font__size_small: rem(12);
+$font__size_description: rem(15);

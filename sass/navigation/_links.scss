@@ -1,0 +1,49 @@
+a {
+  color: $color__link;
+  &,
+  &:visited,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__link-hover;
+  }
+}
+
+a,
+button,
+input {
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+.button,
+.wp-block-button .wp-block-button__link {
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.wp-block-button .wp-block-button__link {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.using-mouse :focus {
+  outline: 0;
+}
+
+.using-mouse ::-moz-focus-inner {
+  border: 0;
+}
+
+a.generate-back-to-top {
+  background-color: $color__background-back-to-top;
+  color: $color__link-back-to-top;
+}
+a.generate-back-to-top:hover,
+a.generate-back-to-top:focus {
+  background-color: $color__background-hover-back-to-top;
+  color: $color__link-hover-back-to-top;
+}

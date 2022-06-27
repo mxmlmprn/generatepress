@@ -1,23 +1,31 @@
+/*===== Sidebar =====*/
 .sidebar .grid-container {
-	max-width: 100%;
-	width: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .both-left .is-left-sidebar,
 .both-sidebars .is-left-sidebar,
 .left-sidebar .sidebar {
-	order: -10;
+  order: -10;
 }
 
 .both-left .is-right-sidebar {
-	order: -5;
+  order: -5;
 }
 
 .both-right .is-left-sidebar {
-	order: 5;
+  order: 5;
 }
 
 .both-right .is-right-sidebar,
 .both-sidebars .is-right-sidebar {
-	order: 10;
+  order: 10;
+}
+
+.is-right-sidebar {
+  width: 30%;
+}
+.is-left-sidebar {
+  width: 30%;
 }

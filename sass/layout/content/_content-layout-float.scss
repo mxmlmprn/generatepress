@@ -1,95 +1,96 @@
+/*===== Content Layout =====*/
 .post {
-	margin: 0 0 2em;
+  margin: 0 0 2em;
 }
 
 .page-header {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 /*--------------------------------------------------------------
 ## One Container
 --------------------------------------------------------------*/
 .one-container {
-	&.both-left .inside-left-sidebar,
-	&.both-right .inside-left-sidebar {
-		margin-right: $element-padding / 2;
-	}
+  &.both-left .inside-left-sidebar,
+  &.both-right .inside-left-sidebar {
+    margin-right: $element-padding / 2;
+  }
 
-	&.both-left .inside-right-sidebar,
-	&.both-right .inside-right-sidebar {
-		margin-left: $element-padding / 2;
-	}
+  &.both-left .inside-right-sidebar,
+  &.both-right .inside-right-sidebar {
+    margin-left: $element-padding / 2;
+  }
 
-	&:not(.page) .inside-article {
-		padding: 0 0 30px;
-	}
+  &:not(.page) .inside-article {
+    padding: 0 0 30px;
+  }
 
-	&.both-right .site-main,
-	&.right-sidebar .site-main {
-		margin-right: $element-padding;
-	}
+  &.both-right .site-main,
+  &.right-sidebar .site-main {
+    margin-right: $element-padding;
+  }
 
-	&.both-left .site-main,
-	&.left-sidebar .site-main {
-		margin-left: $element-padding;
-	}
+  &.both-left .site-main,
+  &.left-sidebar .site-main {
+    margin-left: $element-padding;
+  }
 
-	&.both-sidebars .site-main {
-		margin: 0 $element-padding;
-	}
+  &.both-sidebars .site-main {
+    margin: 0 $element-padding;
+  }
 
-	.site-content {
-		padding: $element-padding;
-	}
+  .site-content {
+    padding: $element-padding;
+  }
 }
 /*--------------------------------------------------------------
 ## Separate Containers
 --------------------------------------------------------------*/
 .separate-containers {
-	.comments-area,
-	.inside-article,
-	.page-header,
-	.paging-navigation {
-		padding: $element-padding;
-	}
+  .comments-area,
+  .inside-article,
+  .page-header,
+  .paging-navigation {
+    padding: $element-padding;
+  }
 
-	.page-header,
-	.site-main > *,
-	.widget {
-		margin-bottom: $separating-space;
-	}
+  .page-header,
+  .site-main > *,
+  .widget {
+    margin-bottom: $separating-space;
+  }
 
-	.site-main {
-		margin: $separating-space;
-	}
+  .site-main {
+    margin: $separating-space;
+  }
 
-	&.no-sidebar .site-main {
-		margin-left: 0;
-		margin-right: 0;
-	}
+  &.no-sidebar .site-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-	&.both-right .site-main,
-	&.right-sidebar .site-main {
-		margin-left: 0;
-	}
+  &.both-right .site-main,
+  &.right-sidebar .site-main {
+    margin-left: 0;
+  }
 
-	&.both-left .site-main,
-	&.left-sidebar .site-main {
-		margin-right: 0;
-	}
+  &.both-left .site-main,
+  &.left-sidebar .site-main {
+    margin-right: 0;
+  }
 
-	&.both-left .inside-left-sidebar,
-	&.both-right .inside-left-sidebar {
-		margin-right: $separating-space / 2;
-	}
+  &.both-left .inside-left-sidebar,
+  &.both-right .inside-left-sidebar {
+    margin-right: $separating-space / 2;
+  }
 
-	&.both-left .inside-right-sidebar,
-	&.both-right .inside-right-sidebar {
-		margin-left: $separating-space / 2;
-	}
+  &.both-left .inside-right-sidebar,
+  &.both-right .inside-right-sidebar {
+    margin-left: $separating-space / 2;
+  }
 
-	.inside-left-sidebar,
-	.inside-right-sidebar {
-		margin-top: $separating-space;
-		margin-bottom: $separating-space;
-	}
+  .inside-left-sidebar,
+  .inside-right-sidebar {
+    margin-top: $separating-space;
+    margin-bottom: $separating-space;
+  }
 }

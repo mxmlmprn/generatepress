@@ -1,0 +1,194 @@
+nav {
+  height: 100%;
+}
+
+/*===== Main navigation =====*/
+.main-navigation {
+  z-index: 100;
+  padding: 0;
+  clear: both;
+  display: block;
+
+  & hr {
+    margin: 8px 0;
+    height: 1px;
+    background-color: $color__border-default;
+    width: 100%;
+  }
+
+  & a {
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  & li {
+    float: left;
+    position: relative;
+    margin-right: 12px;
+  }
+
+  & .main-nav > ul {
+    & li a {
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 60px;
+      font-size: 16px;
+      background-color: $color__background-main-nav-default;
+    }
+
+    & ul li a {
+      color: $color__link-main-nav;
+      font-size: 14px;
+    }
+
+    & ul li:hover > a,
+    & ul li:focus > a,
+    & ul li.sfHover > a {
+      color: $color__link-hover-main-nav;
+      background-color: $color__background-main-nav;
+    }
+    & ul li[class*="current-menu-"] > a {
+      color: $color__link-hover-main-nav;
+      background-color: $color__background-main-nav;
+    }
+    & ul li[class*="current-menu-"] > a:hover,
+    & ul li[class*="current-menu-"].sfHover > a {
+      color: $color__link-hover-main-nav;
+      background-color: $color__background-main-nav;
+    }
+  }
+
+  & .inside-navigation {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+/*===== Breakpoint (768px) =====*/
+@media (max-width: 768px) {
+  /* Mobile main navigation styles (768px) */
+  .main-navigation .menu-bar-item:hover > a,
+  .main-navigation .menu-bar-item.sfHover > a {
+    background: none;
+    color: $color__link-main-nav;
+  }
+
+  .main-navigation .menu-toggle,
+  .sidebar-nav-mobile:not(#sticky-placeholder) {
+    display: block;
+  }
+  .main-navigation ul,
+  .gen-sidebar-nav,
+  .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,
+  .has-inline-mobile-toggle
+    #site-navigation
+    .inside-navigation
+    > *:not(.navigation-search):not(.main-nav) {
+    display: none;
+  }
+  .nav-align-right .inside-navigation,
+  .nav-align-center .inside-navigation {
+    justify-content: space-between;
+  }
+  .has-inline-mobile-toggle .mobile-menu-control-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .has-inline-mobile-toggle .inside-header {
+    flex-direction: row;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  .has-inline-mobile-toggle .header-widget,
+  .has-inline-mobile-toggle #site-navigation {
+    flex-basis: 100%;
+  }
+  .nav-float-left .has-inline-mobile-toggle #site-navigation {
+    order: 10;
+  }
+}
+
+/*===== Sidebar navigation =====*/
+
+.widget-area .main-navigation li {
+  float: none;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .main-navigation .main-nav {
+  flex-basis: 100%;
+
+  & > ul {
+    flex-direction: column;
+  }
+}
+
+.sidebar .main-navigation .menu-bar-items {
+  margin: 0 auto;
+  & .search-item {
+    order: 10;
+  }
+}
+
+.sidebar .main-navigation.sub-menu-right ul li:hover ul,
+.sidebar .main-navigation.sub-menu-right ul li.sfHover ul {
+  top: 0;
+  left: 100%;
+}
+
+.sidebar .main-navigation.sub-menu-left ul li:hover ul,
+.sidebar .main-navigation.sub-menu-left ul li.sfHover ul {
+  top: 0;
+  right: 100%;
+}
+
+/*===== Post navigation =====*/
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 2em;
+  overflow: hidden;
+}
+
+.site-main .post-navigation {
+  margin-bottom: 0;
+}
+
+.paging-navigation .nav-previous,
+.paging-navigation .nav-next {
+  display: none;
+}
+
+.paging-navigation .nav-links > * {
+  padding: 0 5px;
+}
+
+.paging-navigation .nav-links .current {
+  font-weight: bold;
+}
+
+// Less specific so we don't overwrite existing customizations.
+.nav-links > *:first-child {
+  padding-left: 0;
+}
+
+/*===== Links =====*/
+@import "links";
+
+/*===== Menus =====*/
+@import "menus";

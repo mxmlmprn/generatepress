@@ -1,81 +1,290 @@
+/* Header widget styles */
 .header-widget {
-	float: right;
-	overflow: hidden;
-	max-width: 50%;
+  float: right;
+  overflow: hidden;
+  max-width: 50%;
+  margin-left: auto;
+  & p:last-child {
+    margin-bottom: 0;
+  }
+  & .widget {
+    padding: 0 0 20px;
+    margin-bottom: 0;
 
-	.widget {
-		padding: 0 0 20px;
-		margin-bottom: 0;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 
-		&:last-child {
-			padding-bottom: 0;
-		}
-	}
-
-	.widget-title {
-		margin-bottom: 15px;
-	}
+  .widget-title {
+    margin-bottom: 15px;
+  }
 }
 
 .nav-float-right .header-widget {
-	position: relative;
-	top: -10px;
+  position: relative;
+  top: -10px;
 
-	.widget {
-		padding: 0 0 10px;
-	}
+  margin-left: 20px;
+
+  .widget {
+    padding: 0 0 10px;
+  }
+}
+
+.nav-float-right #site-navigation {
+  margin-left: auto;
+}
+
+.nav-float-left #site-navigation {
+  margin-right: auto;
+  order: -10;
 }
 
 .nav-float-left .inside-header {
-	.site-branding,
-	.site-logo {
-		float: right;
-		clear: right;
-	}
+  .site-branding,
+  .site-logo {
+    float: right;
+    clear: right;
+  }
 
-	&:after {
-		clear: both;
-		content: '';
-		display: table;
-	}
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
 }
 
 .nav-float-right .inside-header .site-branding {
-	display: inline-block;
+  display: inline-block;
+}
+
+.nav-float-left .header-widget {
+  margin-left: 0;
+  margin-right: 20px;
+  order: -15;
 }
 
 .site-branding-container {
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	text-align: left;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
 
-	.site-logo {
-		margin-right: 1.5em;
-	}
+  .site-logo {
+    margin-right: 1.5em;
+  }
 }
 
 .header-aligned-center .site-header {
-	text-align: center;
+  text-align: center;
 }
 
 .header-aligned-right {
-	.site-header {
-		text-align: right;
-	}
+  .site-header {
+    text-align: right;
+  }
 
-	.site-branding-container {
-		text-align: right;
-	}
+  .site-branding-container {
+    text-align: right;
+  }
 
-	.site-branding-container .site-logo {
-		-webkit-box-ordinal-group: 11;
-		-ms-flex-order: 10;
-		order: 10;
-		margin-right: 0;
-		margin-left: 1.5em;
-	}
+  .site-branding-container .site-logo {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 10;
+    order: 10;
+    margin-right: 0;
+    margin-left: 1.5em;
+  }
+}
+
+.header-aligned-center:not([class*="nav-float-"]) .inside-header {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-aligned-center:not([class*="nav-float-"]) .header-widget {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-aligned-center:not([class*="nav-float-"])
+  .inside-header
+  > *:not(:first-child) {
+  margin-top: 1em;
+}
+
+.header-aligned-right:not([class*="nav-float-"]) .inside-header {
+  justify-content: flex-end;
+}
+
+.header-aligned-right:not([class*="nav-float-"]) .header-widget {
+  margin-right: auto;
+  margin-left: 0;
+  order: -10;
+}
+
+/*===== Breakpoint (768px) =====*/
+@media (max-width: 768px) {
+  /* Mobile header styles (768px) */
+  .inside-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-header .header-widget {
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .inside-header > *:not(:last-child):not(.main-navigation) {
+    margin-bottom: 20px;
+  }
+
+  .site-header,
+  .header-aligned-right .site-header {
+    text-align: center;
+  }
+
+  .header-widget {
+    float: none;
+    max-width: 100%;
+    text-align: center;
+  }
+  /* Mobile top-bar styles (768px) */
+  .top-bar.top-bar-align-left,
+  .top-bar.top-bar-align-right {
+    text-align: center;
+  }
+
+  .top-bar .widget {
+    float: none !important;
+    margin: 0 10px !important;
+  }
+
+  .top-bar .widget_nav_menu li {
+    float: none;
+    display: inline-block;
+    padding: 5px 0;
+  }
+
+  /* Mobile cached styles (768px) */
+  .inside-header {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+/* Top bar styles */
+.top-bar {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 13px;
+  background-color: $color__background-top-bar;
+  color: $color__text-top-bar;
+  & a {
+    color: $color__link-top-bar;
+    &:hover {
+      color: $color__link-hover-top-bar;
+    }
+  }
+  & .inside-top-bar .widget {
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+  }
+  & .inside-top-bar .textwidget p:last-child {
+    margin: 0;
+  }
+  & .widget-title {
+    display: none;
+  }
+  & .widget_nav_menu li {
+    margin: 0 10px;
+    float: left;
+    padding: 0;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    & ul {
+      display: none;
+    }
+  }
+  & .widget_nav_menu > div > ul {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.inside-top-bar {
+  padding: 10px 40px;
+}
+
+.top-bar-align-center {
+  text-align: center;
+  & .inside-top-bar .widget:not(:first-child) {
+    margin-left: 10px;
+  }
+  & .inside-top-bar .widget:first-child:last-child {
+    display: block;
+  }
+}
+
+.top-bar-align-right {
+  text-align: right;
+
+  & .inside-top-bar > .widget:nth-child(even) {
+    float: left;
+    margin-right: 10px;
+  }
+  & .inside-top-bar > .widget:nth-child(odd) {
+    margin-left: 10px;
+  }
+}
+
+.top-bar-align-left {
+  & .inside-top-bar > .widget:nth-child(odd) {
+    float: left;
+    margin-right: 10px;
+  }
+  & .inside-top-bar > .widget:nth-child(even) {
+    margin-left: 10px;
+    float: right;
+  }
+}
+
+/*===== Breakpoint (768px) =====*/
+@media (max-width: 768px) {
+  /* Mobile top-bar styles (768px) */
+  .top-bar.top-bar-align-left,
+  .top-bar.top-bar-align-right {
+    text-align: center;
+  }
+
+  .top-bar .widget {
+    float: none !important;
+    margin: 0 10px !important;
+  }
+
+  .top-bar .widget_nav_menu li {
+    float: none;
+    display: inline-block;
+    padding: 5px 0;
+  }
+
+  /* Mobile cached styles (768px) */
+
+  .inside-top-bar {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
