@@ -1,0 +1,90 @@
+@import "buttons";
+
+/*===== Fields =====*/
+@import "fields";
+
+/*===== Forms =====*/
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid transparent;
+  background: $color__background-buttons;
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  padding: 10px 20px;
+  color: #fff;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* Addresses box sizing set to content-box in IE8/9 */
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
+input[type="file"] {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+a.wp-block-button__link:not(.has-background) {
+  color: $color__text-buttons-hover;
+  background-color: $color__background-buttons;
+}
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+a.button:hover,
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+a.button:focus,
+a.wp-block-button__link:not(.has-background):active,
+a.wp-block-button__link:not(.has-background):focus,
+a.wp-block-button__link:not(.has-background):hover {
+  color: $color__text-buttons-hover;
+  background-color: $color__background-buttons-hover;
+}

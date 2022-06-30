@@ -1,5 +1,4 @@
 /*===== Basic =====*/
-
 body {
   background-color: $color__background-body;
   color: $color__text-screen;
@@ -10,33 +9,26 @@ button,
 input,
 select,
 textarea {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-  font-weight: normal;
+  @include font(
+    $font__family_default,
+    $font__weight_default,
+    $font__line-height_default
+  );
+
+  @include font-size($font__size_text);
   text-transform: none;
-  font-size: 17px;
-  line-height: 1.5;
+  height: 100%;
 }
 
-p {
+p,
+pre,
+blockquote,
+address {
   margin-bottom: 1.5em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-}
-
 pre {
-  background: rgba(0, 0, 0, 0.05);
+  background: $color__background-pre;
   font-family: inherit;
   font-size: inherit;
   line-height: normal;
@@ -49,117 +41,21 @@ pre {
 blockquote {
   border-left: 5px solid rgba(0, 0, 0, 0.05);
   padding: 20px;
-  font-size: 1.2em;
+  margin: 0 0 1.5em;
+  @include font-size($font__size_quote);
   font-style: italic;
-  margin: 0 0 1.5em;
   position: relative;
-}
-
-blockquote p:last-child {
-  margin: 0;
-}
-
-table,
-td,
-th {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  border-width: 1px 0 0 1px;
-  margin: 0 0 1.5em;
-  width: 100%;
-}
-
-td,
-th {
-  padding: 8px;
-}
-
-th {
-  border-width: 0 1px 1px 0;
-}
-
-td {
-  border-width: 0 1px 1px 0;
+  & p:last-child {
+    margin: 0;
+  }
 }
 
 hr {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: $color__background-hr;
   border: 0;
   height: 1px;
   margin-bottom: 40px;
   margin-top: 40px;
-}
-
-fieldset {
-  padding: 0;
-  border: 0;
-  min-width: inherit;
-}
-
-fieldset legend {
-  padding: 0;
-  margin-bottom: 1.5em;
-}
-
-h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-  line-height: 1.2em;
-  font-weight: normal;
-  text-transform: none;
-}
-
-h2 {
-  font-size: 35px;
-  margin-bottom: 20px;
-  line-height: 1.2em;
-  font-weight: normal;
-  text-transform: none;
-}
-
-h3 {
-  font-size: 29px;
-  margin-bottom: 20px;
-  line-height: 1.2em;
-  font-weight: normal;
-  text-transform: none;
-}
-
-h4 {
-  font-size: 24px;
-}
-
-h5 {
-  font-size: 20px;
-}
-
-h4,
-h5,
-h6 {
-  margin-bottom: 20px;
-}
-
-ol,
-ul {
-  margin: 0 0 1.5em 3em;
-}
-
-ul {
-  list-style: disc;
-}
-
-ol {
-  list-style: decimal;
-}
-
-li > ol,
-li > ul {
-  margin-bottom: 0;
-  margin-left: 1.5em;
 }
 
 dt {
@@ -190,7 +86,8 @@ code,
 kbd,
 tt,
 var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  @include font($font__code);
+  @include font-size($font__size_code);
 }
 
 abbr,
@@ -231,15 +128,6 @@ big {
 
 figure {
   margin: 0;
-}
-
-table {
-  margin: 0 0 1.5em;
-  width: 100%;
-}
-
-th {
-  font-weight: bold;
 }
 
 img {

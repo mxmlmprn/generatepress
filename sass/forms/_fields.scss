@@ -1,0 +1,40 @@
+fieldset {
+  padding: 0;
+  border: 0;
+  min-width: inherit;
+  & legend {
+    padding: 0;
+    margin-bottom: 1.5em;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  background: $color__background-fields;
+  color: $color__text-fields;
+  border: 1px solid $color__border-fields;
+  border-radius: 0;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  max-width: 100%;
+  &:focus {
+    color: $color__text-fields;
+    background-color: $color__background-fields-focus;
+    border-color: $color__border-fields-focus;
+  }
+}
+
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
