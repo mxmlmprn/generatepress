@@ -1,9 +1,0 @@
-node_modules
-.sass-cache
-generatepress.zip
-generatepress
-*.zip
-vendor
-cghooks.lock
-composer.lock
-.DS_Store
