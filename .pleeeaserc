@@ -1,5 +1,5 @@
 {
-  "in": "./sass/main.scss",
+  "in": "./sass/style.scss",
   "out": "./style.css",
   "sass": true,
   "autoprefixer": true,

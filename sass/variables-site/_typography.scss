@@ -1,3 +1,7 @@
+/*===== Headings =====*/
+@import "headings";
+@import "copy";
+
 $font__family_default: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
   Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
@@ -29,3 +33,6 @@ $font__size_text: 1.0625; //17px
 $font__size_quote: 1.2;
 $font__size_small: rem(12);
 $font__size_description: rem(15);
+
+$site-title-font-size: 25px;
+$site-description-font-size: 15px;
